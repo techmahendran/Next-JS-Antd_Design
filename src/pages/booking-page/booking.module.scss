@@ -1,0 +1,278 @@
+.container {
+  display: flex;
+  .head {
+    width: 30%;
+    // border-right: 1px solid #000;
+    padding: 1rem 1.5rem;
+    .title {
+      display: flex;
+      align-items: center;
+      h3 {
+        color: rgb(51, 51, 51);
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .refresh {
+        color: #5c20cf;
+        cursor: pointer;
+        width: 30px;
+        font-size: 20px;
+      }
+    }
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    .textcolor {
+      color: #5c20cf;
+      cursor: pointer;
+    }
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .activeRefresh {
+      animation: rotate 1s linear forwards;
+    }
+  }
+  .bookingarea {
+    padding-left: 1.5rem;
+    position: relative;
+    .title {
+      margin: 0 !important;
+    }
+    h4 {
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    p {
+      color: #666666;
+      font-size: 0.75rem;
+    }
+    .virtual {
+      width: 1pt;
+      height: 125px;
+      border-left: 1px solid #999999;
+      position: absolute;
+      top: 0.5rem;
+      left: 0px;
+    }
+  }
+  .addbtn {
+    background-color: #5c20cf;
+    color: #fff;
+    text-align: center;
+  }
+  .tickimg {
+    position: absolute;
+    top: 0;
+    left: -7px;
+  }
+  .ellipse,
+  .ellipse2 {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #999999;
+    position: absolute;
+    top: 4rem;
+    left: -6px;
+  }
+  .ellipse2 {
+    top: 8rem;
+  }
+}
+.ant-tabs-nav {
+  background-color: rgb(250, 248, 248);
+}
+.tabsContent {
+  box-shadow: -5px 0px 20px -5px #d3cdcd;
+  height: 100vh;
+  width: 70%;
+}
+
+#pendingContent {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 55%;
+  // border-bottom: 2px solid red;
+  .btns {
+    button {
+      padding: 1rem;
+      border: 1px solid #5c20cf;
+      color: #5c20cf;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 400;
+      transition: all 0.3s ease-in-out;
+
+      &:first-child {
+        border-radius: 6px 0px 0px 6px;
+      }
+      &:nth-child(2) {
+        border-radius: 0px 6px 6px 0px;
+      }
+    }
+    .active {
+      color: #fff;
+      background-color: #5c20cf;
+    }
+  }
+  .tasks {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .taskdetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    h4 {
+      font-weight: 500;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+    p {
+      font-size: 0.75rem;
+      margin-top: 5px;
+      color: #666666;
+    }
+    .actions {
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #5c20cf;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.label {
+  font-size: 0.75em;
+  margin: 1rem 0;
+  display: inline-block;
+  color: #999999;
+}
+.consignee {
+  padding: 0.95rem;
+  border: 1px solid #5c20cf;
+  color: #fff;
+  background-color: #5c20cf;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 4rem;
+}
+
+.documents {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 95%;
+
+  .documentContent {
+    display: flex;
+    justify-content: space-between;
+    .btns {
+      .active {
+        color: #fff;
+        background-color: #5c20cf;
+      }
+      button {
+        padding: 1rem;
+        border: 1px solid #5c20cf;
+        color: #5c20cf;
+        background: transparent;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+
+        &:first-child {
+          border-radius: 6px 0px 0px 6px;
+          border-right: 0;
+        }
+        &:nth-child(2) {
+          border-right: 0;
+        }
+        &:nth-child(3) {
+          border-radius: 0px 6px 6px 0px;
+        }
+      }
+    }
+    .new_docs {
+      color: #5c20cf;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+  .title {
+    padding-top: 2rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
+.newDocpopup {
+  .plus {
+    text-align: center;
+    width: 400px !important;
+    .plusicon {
+      padding: 1rem;
+      left: 50%;
+      top: 4rem;
+      width: 65px;
+      height: 65px;
+      background-color: #5c20cf;
+      border-radius: 50%;
+      color: #fff;
+      z-index: 1;
+    }
+  }
+  .uploaddoc {
+    border: 1px solid #d9d9d9;
+    padding: 1rem 1.4rem;
+    border-radius: 5px;
+    text-align: right;
+
+    .upload {
+      color: #5c20cf;
+      cursor: pointer;
+      margin: 0;
+      font-weight: 200;
+      display: inline-block;
+    }
+  }
+}
+.submitbtn {
+  background-color: #9465e5;
+  color: #fff;
+  border: none;
+  outline: none;
+  //  width: 100%;
+  border-radius: 8px;
+  padding: 15px 100px;
+  &:disabled {
+    opacity: 0.6;
+  }
+  &:enabled {
+    cursor: pointer;
+  }
+}
+
+.booking_info {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 95%;
+  .title {
+    color: #999999;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .country {
+    display: flex;
+    align-items: center;
+  }
+}

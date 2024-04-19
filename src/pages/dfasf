@@ -1,0 +1,51 @@
+// MyTableComponent.tsx
+
+import React, { useState } from 'react';
+import { Button, Table } from 'antd';
+
+interface TableData {
+  key: number;
+  name: string;
+  age: number;
+}
+
+const MyTableComponent: React.FC = () => {
+  const [showTable, setShowTable] = useState(false);
+  const [tableData, setTableData] = useState<TableData[]>([]);
+
+  const handleButtonClick = () => {
+    // Mock data for demonstration
+    const newData: TableData = {
+      key: tableData.length + 1,
+      name: 'John Doe',
+      age: 30,
+    };
+
+    setTableData([...tableData, newData]);
+    setShowTable(true);
+  };
+
+  const columns = [
+    {
+      title: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+    },
+    {
+      title: 'Age',
+      dataIndex: 'age',
+      key: 'age',
+    },
+  ];
+
+  return (
+    // <div>
+    //   <Button onClick={handleButtonClick}>Open Table</Button>
+    //   {showTable && (
+    //     <Table dataSource={tableData} columns={columns} pagination={false} />
+    //   )}
+    // </div>
+  );
+};
+
+export default MyTableComponent;

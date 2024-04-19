@@ -1,0 +1,47 @@
+
+.container {
+  background-color: #fdf6f6;
+}
+header {
+  .img {
+    position: relative;
+    top: 15px;
+    margin-right: 1rem;
+  }
+}
+
+.form_container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 500px;
+  #submitDiv {
+    width: 100% !important;
+  }
+}
+.tablecontent {
+  th:nth-child(1) {
+    color: black !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+  }
+  td:last-child button {
+    color: #fff;
+    background-color: red !important;
+    display: inline;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.arrowremove::-webkit-outer-spin-button,
+.arrowremove::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.addbtn{
+  background-color: #1677ff !important; 
+}

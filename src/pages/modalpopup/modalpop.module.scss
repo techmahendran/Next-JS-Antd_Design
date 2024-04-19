@@ -1,0 +1,17 @@
+.para {
+  color: rgb(131, 129, 129);
+}
+.btn span {
+  padding: 10px 14px;
+  border-radius: 6px;
+  background-color: rgb(60 107 226);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+ &:hover {
+    color: #fff !important;
+    background-color: rgb(60 107 226) !important;
+  }
+}

@@ -1,0 +1,27 @@
+.todopage {
+  align-items: center;
+  //   width: 500px;
+  background: none !important;
+  .head {
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+  }
+  .todolist {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(201, 200, 200);
+  }
+  .delbtn {
+    background: transparent;
+    font-size: 20px;
+    color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

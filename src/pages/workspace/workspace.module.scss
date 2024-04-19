@@ -1,0 +1,107 @@
+.approveworkspace {
+//   width: 30%;
+  display: inherit !important;
+  justify-content: normal;
+  align-items: normal;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dddddd;
+    padding: 1rem 1.4rem;
+    border-radius: 10px;
+
+.count {
+        margin-right: 3rem;
+      margin-left: 1rem;
+      border: 1px solid #dddddd;
+      border-radius: 20px;
+      padding: 0px 10px;
+    }
+    .headerbtn {
+      border: none;
+      background: transparent;
+      font-size: 10px;
+      cursor: pointer;
+    }
+  }
+  .selection {
+    .dateisela {
+      display: flex;
+      .date {
+        margin-right: 2rem;
+        color: #666666;
+        font-size: 12px;
+      }
+      .elapsed {
+        color: #ff4b59;
+        font-size: 14px;
+      }
+    }
+    &:hover {
+      border: 1px solid #5c20cf;
+    }
+  }
+}
+.activeBtn {
+  padding: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.selection {
+  margin-top: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  border-left: 2px solid #ff4b59;
+  font-size: 12px;
+
+  .content {
+    line-height: 17px;
+    .title {
+      font-weight: 500;
+      margin-top: 1em;
+    }
+    .des {
+      color: #666666;
+    }
+    .mail {
+      display: flex;
+      align-items: center;
+      color: #666666;
+    }
+  }
+}
+.Elapsed {
+  padding: 1rem;
+}
+.vertical {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  writing-mode: vertical-rl;
+  background: #f6f6f6;
+  .count {
+    margin-top: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    padding: 10px 0px;
+  }
+}
+
+.actioncontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-top: 1px solid #dddddd;
+  .takelink a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #5c20cf !important;
+  }
+}

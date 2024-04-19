@@ -1,0 +1,24 @@
+ // const [formItems, setFormItems] = useState<
+  //   { label: string; value: number }[]
+  // >([
+  //   { label: "Num1", value: 0 },
+  //   { label: "Num2", value: 0 },
+  // ]);
+
+    // const onClearFields = () => {
+  //   setFormItems([]);
+  //   setTotalResult(null);
+  // };
+
+   // Load data from local storage on component mount
+  useEffect(() => {
+    const storedBooks = localStorage.getItem("books");
+    if (storedBooks) {
+      setBooks(JSON.parse(storedBooks));
+    }
+  }, []);
+
+  // Update local storage whenever books state changes
+  useEffect(() => {
+    localStorage.setItem("books", JSON.stringify(books));
+  }, [books]);

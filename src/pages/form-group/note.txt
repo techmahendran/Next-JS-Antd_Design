@@ -1,0 +1,39 @@
+ // const [form] = Form.useForm<
+  //   { label: "Num1"; value: 0 },
+  //   { label: "Num2"; value: 0 }
+  // >();
+
+  // const handleRemoveFormItem = (id: number) => {
+  //   setFormItems((prevFormItems) =>
+  //     prevFormItems.filter((_, index) => index !== id)
+  //   );
+  // };
+
+  // let sum = 0;
+  // const calculateSum = (value) => {
+
+  //   console.log("formitems");
+
+  //   // formItems.forEach((item) => {
+  //   //   sum += item.value;
+  //   //   console.log(item);
+  //   //   console.log("formitems", formItems);
+  //   // });
+
+  //   setTotalResult((prev: number) => prev + value);
+
+  //   // setTotalResult(sum);
+
+  //   console.log("Sum:", sum);
+  // };
+
+  // const handleInputChange = (index: number, value: any, item: FormItem) => {
+  //   if (value !== undefined) {
+  //     const updatedFormItems = [...formItems];
+  //     updatedFormItems[index].value = value;
+  //     setFormItems(updatedFormItems);
+  //     console.log("form", item);
+  //   }
+  //   calculateSum(value);
+  // };
+ 

@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+}
+.container .head {
+  width: 30%;
+  padding: 1rem 1.5rem;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.container .head .title {
+  display: flex;
+  align-items: center;
+}
+.container .head .title h3 {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+}
+.container .head .title .refresh {
+  color: #5c20cf;
+  cursor: pointer;
+}
+.container .head .textcolor {
+  color: #5c20cf;
+  cursor: pointer;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container .head .activeRefresh {
+  animation: rotate 1s linear forwards;
+}
+.container .bookingarea {
+  padding-left: 1.5rem;
+  position: relative;
+}
+.container .bookingarea .title {
+  margin: 0 !important;
+}
+.container .bookingarea h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.container .bookingarea p {
+  color: #666666;
+  font-size: 0.75rem;
+}
+.container .bookingarea .virtual {
+  width: 1pt;
+  height: 125px;
+  border-left: 1px solid #999999;
+  position: absolute;
+  top: 0.5rem;
+  left: 0px;
+}
+.container .addbtn {
+  background-color: #5c20cf;
+  color: #fff;
+  text-align: center;
+}
+.container .tickimg {
+  position: absolute;
+  top: 0;
+  left: -7px;
+}
+.container .ellipse,
+.container .ellipse2 {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #999999;
+  position: absolute;
+  top: 4rem;
+  left: -6px;
+}
+.container .ellipse2 {
+  top: 8rem;
+}
+
+.ant-tabs-nav {
+  background-color: rgb(250, 248, 248);
+}
+
+.tabsContent {
+  box-shadow: -5px 0px 20px -5px #d3cdcd;
+  height: 100vh;
+  width: 70%;
+}
+
+#pendingContent {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 55%;
+}
+#pendingContent .btns button {
+  padding: 1rem;
+  border: 1px solid #5c20cf;
+  color: #5c20cf;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+#pendingContent .btns button:first-child {
+  border-radius: 6px 0px 0px 6px;
+}
+#pendingContent .btns button:nth-child(2) {
+  border-radius: 0px 6px 6px 0px;
+}
+#pendingContent .btns .active {
+  color: #fff;
+  background-color: #5c20cf;
+}
+#pendingContent .tasks {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+#pendingContent .taskdetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#pendingContent .taskdetails h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+#pendingContent .taskdetails p {
+  font-size: 0.75rem;
+  margin-top: 5px;
+  color: #666666;
+}
+#pendingContent .taskdetails .actions button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #5c20cf;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 0.75em;
+  margin: 1rem 0;
+  display: inline-block;
+  color: #999999;
+}
+
+.consignee {
+  padding: 0.95rem;
+  border: 1px solid #5c20cf;
+  color: #fff;
+  background-color: #5c20cf;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 4rem;
+}
+
+.documents {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 95%;
+}
+.documents .documentContent {
+  display: flex;
+  justify-content: space-between;
+}
+.documents .documentContent .btns .active {
+  color: #fff;
+  background-color: #5c20cf;
+}
+.documents .documentContent .btns button {
+  padding: 1rem;
+  border: 1px solid #5c20cf;
+  color: #5c20cf;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.documents .documentContent .btns button:first-child {
+  border-radius: 6px 0px 0px 6px;
+  border-right: 0;
+}
+.documents .documentContent .btns button:nth-child(2) {
+  border-right: 0;
+}
+.documents .documentContent .btns button:nth-child(3) {
+  border-radius: 0px 6px 6px 0px;
+}
+.documents .documentContent .new_docs {
+  color: #5c20cf;
+  cursor: pointer;
+  position: relative;
+}
+.documents .title {
+  padding-top: 2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.newDocpopup .plus {
+  text-align: center;
+}
+.newDocpopup .plus .plusicon {
+  padding: 1rem;
+  left: 50%;
+  top: 4rem;
+  width: 65px;
+  height: 65px;
+  background-color: #5c20cf;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 1;
+}
+.newDocpopup .uploaddoc {
+  border: 1px solid #d9d9d9;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  text-align: right;
+}
+.newDocpopup .uploaddoc .upload {
+  color: #5c20cf;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 200;
+  display: inline-block;
+}
+
+.submitbtn {
+  background-color: #9465e5;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 15px 100px;
+}
+.submitbtn:disabled {
+  opacity: 0.6;
+}
+.submitbtn:enabled {
+  cursor: pointer;
+}
+
+.booking_info {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  width: 95%;
+}
+.booking_info .title {
+  color: #999999;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.booking_info .country {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=booking.module.css.map */
